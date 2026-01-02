@@ -9,6 +9,94 @@ By leveraging PHP and MySQL, we have developed a secure, responsive platform tha
 
 ![Screenshot_2-1-2026_185428_gemini google com](https://github.com/user-attachments/assets/874d2a99-7872-4800-9978-f7aae1b71927)
 
+### Velvet Vogue: System Specifications & Technical Documentation
+
+**1. Requirement Categorization**
+
+#### A. Client Requirements (Functional)
+
+Product Management: Ability for the administrator (John Finlo) to add, update, and remove products through a secure dashboard.
+
+Transaction Processing: A robust shopping cart system capable of handling item selection, quantity adjustments, and payment processing.
+
+User Authentication: Distinct roles for 'Customer' (buying) and 'Admin' (inventory management).
+
+Filtering System: Dynamic search results based on gender, size, price, and clothing type.
+
+#### B. User Requirements (Functional)
+
+Account Discovery: Users must be able to create personal profiles and track their order history.
+
+Seamless Navigation: Intuitive access to categories (Women, Men, Accessories) from any page.
+
+Inquiry System: Access to customer support and contact forms for order-related queries.
+
+#### C. Non-Functional Requirements
+
+Responsiveness: The layout must adapt to mobile, tablet, and desktop viewports.
+
+Performance: Pages must load quickly to maintain a luxury feel; optimized SQL queries for high-speed filtering.
+
+Reliability: 24/7 availability of the store for global customers.
+
+#### D. System Requirements
+
+| Requirement Type | Developer Requirements                  | User Requirements                          |
+|------------------|------------------------------------------|--------------------------------------------|
+| **Hardware**     | High-speed workstation, 16GB RAM         | Smartphone or PC with internet access      |
+| **Software**     | VS Code, XAMPP (Local Testing), Git      | Modern Browser (Chrome, Safari, Edge)      |
+| **Operating System** | Windows 11 / macOS                  | Android, iOS, Windows, macOS               |
+
+**2. Networking and Hosting Considerations**
+
+To ensure Velvet Vogue remains accessible worldwide, the following networking protocols and hosting strategies are implemented:
+
+DNS Management: Domain Name System (DNS) configuration to point the "https://www.google.com/search?q=velvetvogue.com" domain to the InfinityFree/Web-host IP address.
+
+Communication Protocols: Use of HTTPS (Hypertext Transfer Protocol Secure) via SSL certificates to encrypt data between the user's browser and the server.
+
+Web Server Software: The site is hosted on an Apache web server, utilizing .htaccess for URL rewriting and directory security.
+
+Server Hardware: Hosted on shared SSD-based cloud servers to ensure rapid file retrieval and low latency for customers in various geographic regions.
+
+**3. Security Features**
+
+Security is paramount for an e-commerce solution handling user data:
+
+Session Security: Implementation of session_start() with strict validation to prevent session hijacking.
+
+SQL Injection Prevention: Use of mysqli_real_escape_string and prepared statements to sanitize user inputs before they reach the database.
+
+Authentication Guards: Server-side checks (e.g., if (!isset($_SESSION['user']))) on every sensitive page (Cart, Account, Admin) to prevent unauthorized access.
+
+Password Hashing: Storing user credentials using modern hashing algorithms to protect data in the event of a database breach.
+
+**4. Accessibility and Inclusivity Guidelines**
+
+Velvet Vogue is built to be usable by everyone, regardless of their physical or technical limitations:
+
+Semantic HTML: Using tags like <nav>, <header>, and <footer> so screen readers can easily navigate the site structure.
+
+Contrast & Typography: Utilizing high-contrast text colors (Black/Gold on White) and legible font sizes to assist users with visual impairments.
+
+Alt Text: Providing descriptive alt attributes for all product images so visually impaired users can understand the collection through screen readers.
+
+Keyboard Navigation: Ensuring all buttons and links are reachable via the 'Tab' key for users who cannot use a mouse.
+
+**5. Management Services & Software**
+
+The project was developed and managed using the following industry-standard tools:
+
+Web Development Technologies: HTML5, CSS3 (Bootstrap 5 Framework), and JavaScript (ES6+).
+
+Backend Framework: Procedural PHP for server-side logic and database connectivity.
+
+Database Management: MySQL (relational database) managed through the phpMyAdmin interface.
+
+Version Control: Git was used to track changes and manage code iterations.
+
+Design Tools: High-fidelity wireframing and prototyping to establish the brand's visual identity before coding.
+
 ### Velvet Vogue: Technical Challenges & Resolutions
 
 **1. The "Headers Already Sent" Error (Redirect Failures)**
