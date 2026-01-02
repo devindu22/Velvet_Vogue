@@ -7,7 +7,7 @@ By leveraging PHP and MySQL, we have developed a secure, responsive platform tha
 
 # Velvet Vogue Website HyperLink 
 
-devindu-malshan.infinityfree.me
+https://devindu-malshan.infinityfree.me
 
 # Site Map Architecture & Navigation Flow
 
