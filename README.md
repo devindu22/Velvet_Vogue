@@ -5,6 +5,10 @@ This project involves the design and implementation of a comprehensive multi-pag
 
 By leveraging PHP and MySQL, we have developed a secure, responsive platform that caters to the needs of young adults. Key deliverables included a visually compelling product showcase, an intuitive category-based filtering system (Gender, Size, Price), and a robust user authentication framework. The system facilitates a complete "Purchase-to-Profile" journey, allowing customers to manage their own accounts while providing the administrator with a bespoke dashboard to handle inventory and business growth.
 
+# Velvet Vogue Website HyperLink 
+
+devindu-malshan.infinityfree.me
+
 # Site Map Architecture & Navigation Flow
 
 ![Screenshot_2-1-2026_231432_](https://github.com/user-attachments/assets/1720d6a6-1f7d-43de-9191-128332673d26)
