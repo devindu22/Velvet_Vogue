@@ -1,0 +1,154 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --primary-color: #1a1a1a; /* Dark Velvet */
+    --accent-color: #d4af37;  /* Gold */
+    --text-light: #f8f9fa;
+    --text-dark: #333;
+    --bg-light: #f9f9f9;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Navbar Custom Overrides (assuming bootstrap navbar in header) */
+.navbar-brand {
+    font-weight: 700;
+    color: var(--accent-color) !important;
+    letter-spacing: 1px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 160px 0;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+/* Buttons */
+.btn-custom {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    padding: 12px 35px;
+    border-radius: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 2px solid var(--accent-color);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-custom:hover {
+    background-color: transparent;
+    color: var(--accent-color);
+}
+
+.btn-outline-dark {
+    border-radius: 0;
+    padding: 8px 20px;
+}
+
+/* Section Titles */
+.section-title {
+    text-align: center;
+    margin: 50px 0 40px;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent-color);
+}
+
+/* Product Cards */
+.product-card {
+    background: white;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 4px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+.product-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-info h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.product-info .price {
+    color: var(--accent-color);
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* Footer (Generic styles just in case) */
+footer {
+    background: var(--primary-color);
+    color: #ccc;
+    padding: 50px 0 20px;
+    margin-top: 80px;
+}

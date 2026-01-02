@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velvet Vogue Sitemap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; background-color: #fcfcfc; color: #111; }
+        .brand { font-family: 'Playfair Display', serif; }
+        .node { transition: all 0.3s ease; border: 1px solid #e5e7eb; }
+        .node:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); border-color: #d4af37; }
+        .line { height: 2px; background: #eee; flex-grow: 1; }
+        .connector-v { width: 2px; background: #eee; height: 20px; margin: 0 auto; }
+        .gold-tag { background: #d4af37; color: white; font-size: 0.6rem; padding: 2px 6px; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; border-radius: 2px; }
+    </style>
+</head>
+<body class="p-8">
+
+    <div class="max-w-6xl mx-auto">
+        <header class="text-center mb-16">
+            <h1 class="brand text-4xl mb-2">Velvet Vogue</h1>
+            <p class="text-gray-500 uppercase tracking-widest text-xs">Architecture & Navigation Flow</p>
+        </header>
+
+        <!-- Root Level -->
+        <div class="flex flex-col items-center">
+            <div class="node bg-white p-4 w-48 text-center rounded-lg shadow-sm mb-4">
+                <span class="gold-tag mb-2 inline-block">Home</span>
+                <p class="font-bold text-sm">index</p>
+            </div>
+            <div class="connector-v"></div>
+            
+            <!-- Main Navigation Bar Level -->
+            <div class="w-full flex justify-between items-start mt-4 gap-4">
+                
+                <!-- Shopping Flow -->
+                <div class="flex-1 flex flex-col items-center">
+                    <div class="node bg-white p-4 w-40 text-center rounded-lg shadow-sm border-t-4 border-t-gray-800">
+                        <p class="font-bold text-sm">shop</p>
+                        <p class="text-xs text-gray-400 mt-1">Catalog</p>
+                    </div>
+                    <div class="connector-v"></div>
+                    <div class="node bg-white p-4 w-40 text-center rounded-lg shadow-sm">
+                        <p class="font-bold text-sm">product_details</p>
+                        <p class="text-xs text-gray-400 mt-1">Item View</p>
+                    </div>
+                    <div class="connector-v"></div>
+                    <div class="node bg-white p-4 w-40 text-center rounded-lg shadow-sm relative">
+                         <span class="absolute -top-2 -right-2 bg-black text-white text-[8px] px-1 py-0.5">AUTH</span>
+                        <p class="font-bold text-sm">cart</p>
+                        <p class="text-xs text-gray-400 mt-1">Shopping Bag</p>
+                    </div>
+                    <div class="connector-v"></div>
+                    <div class="node bg-gold-50 p-4 w-40 text-center rounded-lg shadow-sm border border-yellow-200">
+                        <p class="font-bold text-sm">checkout</p>
+                        <p class="text-xs text-gray-400 mt-1">Payment</p>
+                    </div>
+                </div>
+
+                <!-- User Account Flow -->
+                <div class="flex-1 flex flex-col items-center">
+                    <div class="node bg-white p-4 w-40 text-center rounded-lg shadow-sm border-t-4 border-t-gray-800">
+                        <p class="font-bold text-sm">signin</p>
+                        <p class="text-xs text-gray-400 mt-1">Login/Register</p>
+                    </div>
+                    <div class="connector-v"></div>
+                    <div class="node bg-white p-4 w-44 text-center rounded-lg shadow-sm">
+                        <p class="font-bold text-sm">account</p>
+                        <div class="mt-2 pt-2 border-t border-gray-50 flex flex-wrap justify-center gap-1">
+                            <span class="text-[9px] bg-gray-100 px-1">Orders</span>
+                            <span class="text-[9px] bg-gray-100 px-1">Wishlist</span>
+                            <span class="text-[9px] bg-gray-100 px-1">Security</span>
+                        </div>
+                    </div>
+                    <div class="connector-v"></div>
+                    <div class="node bg-red-50 p-4 w-40 text-center rounded-lg shadow-sm border border-red-100">
+                        <p class="font-bold text-sm text-red-600">logout</p>
+                        <p class="text-xs text-gray-400 mt-1">Session Clear</p>
+                    </div>
+                </div>
+
+                <!-- Administrative Flow -->
+                <div class="flex-1 flex flex-col items-center">
+                    <div class="node bg-gray-900 text-white p-4 w-44 text-center rounded-lg shadow-lg border-t-4 border-t-[#d4af37]">
+                        <span class="text-[8px] text-[#d4af37] font-bold tracking-widest">ADMIN AREA</span>
+                        <p class="font-bold text-sm">admin/dashboard</p>
+                    </div>
+                    <div class="connector-v"></div>
+                    <div class="node bg-gray-800 text-white p-4 w-40 text-center rounded-lg shadow-sm opacity-90">
+                        <p class="font-bold text-sm">add_product</p>
+                        <p class="text-[10px] text-gray-400 mt-1">Inventory Input</p>
+                    </div>
+                    <div class="connector-v"></div>
+                    <div class="node bg-gray-800 text-white p-4 w-40 text-center rounded-lg shadow-sm opacity-90">
+                        <p class="font-bold text-sm">edit_product</p>
+                        <p class="text-[10px] text-gray-400 mt-1">Update Items</p>
+                    </div>
+                    <div class="connector-v"></div>
+                    <div class="node bg-gray-800 text-white p-4 w-40 text-center rounded-lg shadow-sm opacity-90">
+                        <p class="font-bold text-sm">manage_orders</p>
+                        <p class="text-[10px] text-gray-400 mt-1">Order Tracking</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Global Footer / Helper Layer -->
+            <div class="mt-16 w-full max-w-2xl border-t border-dashed border-gray-200 pt-8 flex justify-around opacity-60">
+                <div class="text-center">
+                    <p class="text-[10px] font-bold uppercase mb-1">Database</p>
+                    <p class="text-xs">db</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-[10px] font-bold uppercase mb-1">UI Global</p>
+                    <p class="text-xs">header / footer</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-[10px] font-bold uppercase mb-1">Logic</p>
+                    <p class="text-xs">actions/ (PHP Scripts)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
