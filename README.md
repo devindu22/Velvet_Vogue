@@ -10,6 +10,7 @@ By leveraging PHP and MySQL, we have developed a secure, responsive platform tha
 ![Screenshot_2-1-2026_231432_](https://github.com/user-attachments/assets/1720d6a6-1f7d-43de-9191-128332673d26)
 
 ### Velvet Vogue: System Specifications & Technical Documentation
+<hr>
 
 **1. Requirement Categorization**
 
@@ -98,6 +99,7 @@ Version Control: Git was used to track changes and manage code iterations.
 Design Tools: High-fidelity wireframing and prototyping to establish the brand's visual identity before coding.
 
 ### Velvet Vogue: Technical Challenges & Resolutions
+<hr>
 
 **1. The "Headers Already Sent" Error (Redirect Failures)**
 
