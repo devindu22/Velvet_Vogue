@@ -7,7 +7,7 @@ By leveraging PHP and MySQL, we have developed a secure, responsive platform tha
 
 # Site Map Architecture & Navigation Flow
 
-![Screenshot_2-1-2026_185428_gemini google com](https://github.com/user-attachments/assets/874d2a99-7872-4800-9978-f7aae1b71927)
+![Screenshot_2-1-2026_231432_](https://github.com/user-attachments/assets/1720d6a6-1f7d-43de-9191-128332673d26)
 
 ### Velvet Vogue: System Specifications & Technical Documentation
 
