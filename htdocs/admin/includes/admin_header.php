@@ -21,6 +21,8 @@ if (!isset($_SESSION['user']) || $_SESSION['user']['role'] !== 'admin') {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
     <style>
         :root { --admin-gold: #d4af37; --admin-dark: #111; }
