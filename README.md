@@ -1,4 +1,4 @@
-<img width="100" height="100" alt="favicon" src="https://github.com/user-attachments/assets/d125feee-26c3-4ef7-929c-8f7a7383f31b" />
+<img width="200" height="200" alt="favicon" src="https://github.com/user-attachments/assets/d125feee-26c3-4ef7-929c-8f7a7383f31b" />
 
 # Velvet Vogue
 
