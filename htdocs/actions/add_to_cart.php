@@ -4,8 +4,7 @@ include '../includes/db.php';
 
 // 1. Check if user is logged in
 if (!isset($_SESSION['user'])) {
-    // If not logged in, redirect to login page with a message
-    header("Location: ../login.php?error=please_login");
+    header("Location: ../signin.php");
     exit();
 }
 
